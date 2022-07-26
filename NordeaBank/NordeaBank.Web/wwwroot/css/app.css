@@ -21,6 +21,9 @@ a, .btn-link {
     background-image: linear-gradient(180deg, #141e30, #243b55 70%);
 }
 
+.main {
+    background-color: #2D2D30;
+}
 .content {
     padding-top: 1.1rem;
 }
