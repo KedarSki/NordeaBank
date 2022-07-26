@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NordeaBank.Web", "NordeaBan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NordeaBank.Api", "NordeaBank.Api\NordeaBank.Api.csproj", "{ED828554-77C1-4CB4-9443-08DEF95560C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NordeaBank.Common", "NordeaBank.Common\NordeaBank.Common.csproj", "{3A5FB1E1-23B1-4F3D-A540-D4F8489352B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{ED828554-77C1-4CB4-9443-08DEF95560C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED828554-77C1-4CB4-9443-08DEF95560C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED828554-77C1-4CB4-9443-08DEF95560C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A5FB1E1-23B1-4F3D-A540-D4F8489352B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A5FB1E1-23B1-4F3D-A540-D4F8489352B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A5FB1E1-23B1-4F3D-A540-D4F8489352B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A5FB1E1-23B1-4F3D-A540-D4F8489352B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,76 @@
+﻿@page "/nordea"
+@using Newtonsoft.Json
+@using NordeaBank.Common
+@inject HttpClient Http
+
+<PageTitle>Nordea Counter</PageTitle>
+
+<h1>Nordea Counter</h1>
+
+<p role="status"> </p>
+
+<button class="btn btn-primary" @onclick="GetNames">Result</button>
+
+@if (names.Count() > 0)
+{
+    <div class="row pt-5">
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover table-sm">
+                <thead class="thead-dark">
+                    <tr><th colspan="10">Results for Nordea Bank</th></tr>
+                </thead>
+                <tbody> 
+                @for(var i = 0; i < 100; i+=10)
+                {
+                    <tr>
+                        <td class="@names[i].ClassName">@names[i].Value</td>
+                        <td class="@names[i+1].ClassName">@names[i+1].Value</td>
+                        <td class="@names[i+2].ClassName">@names[i+2].Value</td>
+                        <td class="@names[i+3].ClassName">@names[i+3].Value</td>
+                        <td class="@names[i+4].ClassName">@names[i+4].Value</td>
+                        <td class="@names[i+5].ClassName">@names[i+5].Value</td>
+                        <td class="@names[i+6].ClassName">@names[i+6].Value</td>
+                        <td class="@names[i+7].ClassName">@names[i+7].Value</td>
+                        <td class="@names[i+8].ClassName">@names[i+8].Value</td>
+                        <td class="@names[i+9].ClassName">@names[i+9].Value</td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}
+
+
+
+@code {
+    new List<Name> names = new List<Name>();
+
+
+    void GetNames()
+    {
+        for (var i = 0; i <= 100; i++)
+        {
+            if (i % 5 == 0 && i % 3 == 0)
+            {
+                names.Add(new Name { Value = "Nordea Bank", ClassName="NordeaBank" });
+            }
+
+            else if (i % 5 == 0)
+            {
+                names.Add(new Name { Value = "Bank", ClassName = "Bank"});
+            }
+
+            else if (i % 3 == 0)
+            {
+                names.Add(new Name { Value = "Nordea", ClassName ="Nordea" });
+            }
+
+            else
+            {
+                names.Add(new Name { Value = i.ToString(), ClassName="Value" });
+            }
+        }
+    }
+
+}
