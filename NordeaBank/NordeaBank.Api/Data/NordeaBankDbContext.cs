@@ -187,9 +187,9 @@ namespace NordeaBank.Api.Data
 
         }
 
-        public DbSet<Title> Titles { get; set; }
+/*        public DbSet<Title> Titles { get; set; }
 
-        public DbSet<Worker> Workers { get; set; }
+        public DbSet<Worker> Workers { get; set; }*/
 
     }
 }
